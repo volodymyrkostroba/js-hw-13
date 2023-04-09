@@ -10,6 +10,8 @@ import galeryHendler from './js/galeryHandler';
 refs.form.addEventListener('submit',(e) => {
 e.preventDefault();
 
+refs.btn.classList.add('is-visible')
+
 refs.list.innerHTML = '';
 
 const searchName = e.currentTarget.query.value;
@@ -21,6 +23,7 @@ apiService.fetchQuery().then(res => {
 
     arr.forEach(e => {
         refs.list.insertAdjacentHTML('beforeend', galeryHendler(e))
+        refs.btn.classList.remove('is-visible')
     });
 });
 })
