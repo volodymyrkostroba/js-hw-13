@@ -2,7 +2,8 @@ export default
 function galeryHendler(obj){
     return `
   <li class="item photo-card">
-    <img src="${obj.webformatURL}" alt="" />
+    <img class="photo-card__img"
+    src="${obj.webformatURL}" alt="" />
   
     <div class="stats">
       <p class="stats-item">
