@@ -7,7 +7,7 @@ page:1,
 searchQuery:'',
 
 fetchQuery(){
-        const url = `https://pixabay.com/api/?image_type=photo&orientation=horizontal&q=${this.searchQuery}&page=${this.page}&per_page=3&key=${apiKey}`;
+        const url = `https://pixabay.com/api/?image_type=photo&orientation=horizontal&q=${this.searchQuery}&page=${this.page}&per_page=9&key=${apiKey}`;
     
         return fetch(url)
             .then(res => res.json())

@@ -46,3 +46,6 @@ refs.btn.addEventListener('click', function (e) {
     });
 
 });
+
+
+refs.modalBtn.addEventListener('click', closeModal);
