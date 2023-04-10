@@ -71,9 +71,7 @@ transform: scale(1.05);
     transform: scale(1.05);
 }
 
-.is-visible{
-    display: none;
-}
+
 
 .modal{
     position: fixed;
@@ -82,9 +80,29 @@ transform: scale(1.05);
     left: 0;
     align-items: center;
     justify-content: center;
+
+    z-index:999;
     
     width: 100vw;
     height: 100vh;
 
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__btn{
+    
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    
+    color: #fff;
+    font-size: 40px;
+    opacity: 0.5;
+}
+
+
+
+// ///
+.is-visible{
+    display: none;
 }
